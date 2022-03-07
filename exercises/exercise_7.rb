@@ -10,3 +10,8 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+user_input = gets.chomp
+store = Store.create(name: user_input ,annual_revenue: 1, mens_apparel: false, womens_apparel: false)
+
+puts store.errors.full_messages
+
